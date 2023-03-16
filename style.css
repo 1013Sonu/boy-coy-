@@ -1,0 +1,1595 @@
+@font-face {
+    font-family: yank;
+    src: url(./Yank.ttf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#loaderr{
+    height: 120vh;
+    width: 100vw;
+    position: absolute;
+    position: fixed;
+    top:0%;
+    background-color:  #f15d58;
+    z-index: 9999;
+}
+
+
+#loaderr #stars{
+ position: absolute;
+ left: 10%;
+
+}
+#loaderr #stars2{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+#loaderr #ufo{
+    height: 25vh;
+    position: absolute;
+    bottom: 35%;
+    left: 35%;
+    animation: ufo 3s  infinite  linear;
+}
+
+@keyframes ufo { 
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(5deg);
+
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+    
+}
+#loaderr #boyload{
+    height: 10vh;
+    position: absolute;
+    left: 45%;
+    bottom: 12%;
+}
+#loaderr #loader{
+    position: absolute;
+    bottom: 28%;
+    left: 48%;
+    height: 5vh;
+}
+#pg1 {
+    height: 120vh;
+    width: 100vw;
+    position: relative;
+    background-color: #f15d58;
+}
+
+#pg1 #pg1back {
+    height: 40vh;
+    width: 40vw;
+    background-image: url(https://boy-coy.com/images/page1/bgd_pattern.png);
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+#nav {
+    height: 25vh;
+    width: 100vw;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+}
+
+#nav #line1 {
+    height: 1px;
+    background-color: black;
+    width: 30vw;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+#nav #line2 {
+    height: 1px;
+    background-color: black;
+    width: 30vw;
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
+
+#nav #uarm {
+    height: 20vh;
+    position: absolute;
+    left: 39%;
+    top: 190%;
+    z-index: 99;
+}
+
+#nav #darm {
+    height: 18vh;
+    position: absolute;
+    left: 55.5%;
+    top: 250%;
+    z-index: 99;
+}
+
+#nav #body {
+    height: 80vh;
+    position: absolute;
+    left: 37%;
+    top: 38%;
+
+}
+
+#nav #ln img {
+    height: 12vh;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+}
+
+#nav #ln #ln2 {
+    height: 12vh;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    opacity: 0;
+}
+
+#nav #ln #ln2:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#nav #rn {
+    height: 12vh;
+    width: 40vw;
+    /* background-color: blue; */
+    position: absolute;
+    left: 56%;
+    top: 15%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #rn i {
+    font-size: 35px;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+}
+
+#nav #rn #a {
+    display: flex;
+    gap: 30px;
+    width: 30vw;
+    margin-top: 12%;
+}
+
+#nav #rn a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav #rn a:hover {
+    background-color: white;
+    transition: 0.5s;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#nav #tag {
+    position: fixed;
+    left: 94%;
+    height: 20vh;
+    top: 15%;
+    z-index: 999;
+}
+
+#pg1 #pg1l {
+    position: relative;
+    /* background-color: red; */
+    width: 40vw;
+    height: 70vh;
+}
+
+#pg1 #pg1l>h1{
+    position: absolute;
+    font-size: 90px;
+    top: 5%;
+    left: 12%;
+
+}
+
+#pg1 #pg1l p {
+    width: 30vw;
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.742);
+    font-family: gilroy;
+    font-weight: 100;
+}
+
+#pg1 #pg1l h2 {
+    width: 26vw;
+    font-family: gilroy;
+    position: absolute;
+    top: 63%;
+    left: 12%;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+}
+
+#pg1 #pg1l i {
+    font-size: 20px;
+}
+
+#pg1 #pg1l img {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+
+#pg1 #pg1r {
+    position: relative;
+    /* background-color: red; */
+    width: 30vw;
+    height: 70vh;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+}
+
+#pg1 #pg1r #f {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 15vh;
+}
+
+#pg1 #pg1r #f2 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 15vh;
+    opacity: 0;
+}
+
+#pg1 #pg1r #f2:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#pg1 #pg1r #g {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    height: 15vh;
+}
+
+#pg1 #pg1r #g2 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    height: 15vh;
+    opacity: 0;
+}
+
+#pg1 #pg1r #g2:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#pg1 #pg1r #t {
+    position: absolute;
+    top: 62%;
+    left: 20%;
+    height: 15vh;
+}
+
+#pg1 #pg1r #t2 {
+    position: absolute;
+    top: 62%;
+    left: 20%;
+    height: 15vh;
+    opacity: 0;
+}
+
+#pg1 #pg1r #t2:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#pg1 #pg1r #band1 {
+    position: absolute;
+    top: 38%;
+    left: 55%;
+    height: 6vh;
+    z-index: 99;
+}
+
+#pg1 #pg1r #band2 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    height: 6vh;
+    z-index: 99;
+}
+
+#pg1 #cloud {
+    height: 50vh;
+    width: 100vw;
+    /* background-color: red; */
+    position: relative;
+    top: -4%;
+}
+
+#pg1 #cloud #c1 {
+    height: 34vh;
+    position: absolute;
+    left: -5%;
+    top: 10%;
+}
+
+#pg1 #cloud #c2 {
+    height: 25vh;
+    position: absolute;
+    left: 25%;
+    top: 18%;
+
+}
+
+#pg1 #cloud #c3 {
+    height: 29vh;
+    position: absolute;
+    left: 40%;
+    top: 13%;
+}
+
+#pg1 #cloud #c4 {
+    height: 40vh;
+    width: 33vw;
+    position: absolute;
+    left: 68%;
+    top: 0%;
+}
+
+#pg2 {
+    height: 150vh;
+    width: 100vw;
+    position: relative;
+    background-color: #dcddcd;
+}
+
+#pg2 #cloud2 {
+    width: 100vw;
+    /* background-color: cadetblue; */
+    /* position: relative; */
+}
+
+#pg2 #cloud2 #c21 {
+    height: 10vh;
+    position: absolute;
+    left: -1%;
+    top: -5%;
+}
+
+#pg2 #cloud2 #c22 {
+    height: 32vh;
+    position: absolute;
+    left: 26%;
+    top: -8%;
+}
+
+#pg2 #cloud2 #c23 {
+    height: 18vh;
+    position: absolute;
+    left: 8%;
+    top: 2%;
+}
+
+#pg2 #cloud2 #c24 {
+    height: 8vh;
+    position: absolute;
+    left: 8%;
+    top: -2%;
+}
+
+#pg2 #cloud2 #c25 {
+    height: 30vh;
+    position: absolute;
+    left: 55%;
+    top: -5%;
+}
+
+#pg2 #cloud2 #c26 {
+    height: 12vh;
+    position: absolute;
+    left: 20%;
+    top: -6%;
+}
+
+#pg2 #cloud2 #c27 {
+    height: 12vh;
+    position: absolute;
+    left: 50%;
+    top: -8%;
+}
+
+#pg2 #cloud2 #c28 {
+    height: 10vh;
+    position: absolute;
+    left: 68%;
+    top: -10%;
+}
+
+#pg2 #cloud2 #c29 {
+    height: 12vh;
+    position: absolute;
+    left: 75%;
+    top: 2%;
+}
+
+#pg2 #cloud2 #c30 {
+    height: 15vh;
+    position: absolute;
+    left: 85%;
+    top: -8%;
+}
+
+#pg2 #ln img {
+    position: absolute;
+    top: 150%;
+    height: 8vh;
+}
+
+#pg2 #nav #ln #pg2boy {
+    position: absolute;
+    top: 150%;
+    height: 8vh;
+    opacity: 0;
+}
+
+#pg2 #nav #ln #pg2boy:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#pg2 #nav #line1 {
+    height: 1px;
+    background-color: black;
+    width: 35vw;
+    position: absolute;
+    top: 188%;
+    left: 5%;
+}
+
+#pg2 #nav #line2 {
+    height: 1px;
+    background-color: black;
+    width: 38vw;
+    position: absolute;
+    top: 188%;
+    left: 50%;
+}
+
+#pg2 #nav #rn i {
+    font-size: 35px;
+    position: absolute;
+    top: 290%;
+    left: 10%;
+}
+
+#pg2 #nav #rn #a {
+    display: flex;
+    gap: 30px;
+    width: 30vw;
+    margin-top: 70%;
+    margin-left: 18%;
+}
+
+#pg2 #nav #rn a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+#pg2 #pg2c #b1 {
+    height: 18vh;
+    position: absolute;
+    left: 41%;
+    top: 26%;
+    transform: rotate(-42deg);
+    animation: b1 4s infinite linear;
+    z-index: 999;
+}
+/* @keyframes b1 {
+    50% {
+        transform: rotate(50deg);
+    }
+} */
+
+
+
+#pg2 #pg2c #b2 {
+    height: 24vh;
+    position: absolute;
+    left: 43.5%;
+    top: 21%;
+    animation: b2 2s infinite linear;
+
+}
+@keyframes b2 {
+    /* 0% {
+        transform: rotate(5deg);
+    }
+    10% {
+        transform: rotate(-15deg);
+    } */
+}
+#pg2 #pg2c #b3 {
+    height: 20vh;
+    position: absolute;
+    left: 46.5%;
+    top: 24.5%;
+    transform: rotate(38deg);
+    animation-name: b3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes b3 {
+    /* 0% {
+        transform: rotate(1deg);
+    } */
+}
+#pg2 #pg2c #tv {
+    height: 52vh;
+    position: absolute;
+    left: 30%;
+    top: 36%;
+}
+
+#pg2 #pg2c #badge {
+    height: 25vh;
+    position: absolute;
+    left: 56%;
+    top: 32%;
+    z-index: 99;
+}
+
+#pg2 #pg2c #ss1 {
+    height: 37vh;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+}
+
+#pg2 #pg2c #ss2 {
+    height: 36.5vh;
+    position: absolute;
+    top: 40%;
+    left: 32.2%;
+    opacity: 0;
+}
+
+#pg2 #pg2c #ss3 {
+    height: 36.5vh;
+    position: absolute;
+    top: 40%;
+    left: 32.2%;
+    opacity: 0;
+}
+
+/* #pg2 #pg2c #ss3:hover{
+    opacity: 1;
+} */
+#pg2 #pg2c #in11 {
+    height: 2vh;
+    position: absolute;
+    top: 65%;
+    left: 44%;
+}
+
+#pg2 #pg2c #in1 {
+    height: 1.8vh;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+}
+
+#pg2 #pg2c #in2 {
+    height: 1.8vh;
+    position: absolute;
+    top: 65%;
+    left: 46%;
+}
+
+#pg2 #pg2c #in3 {
+    height: 16vh;
+    position: absolute;
+    top: 70%;
+    left: 27.5%;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(2deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+}
+
+#pg2 #pg2l {
+    position: relative;
+    height: 60vh;
+    width: 20vw;
+    margin-top: 10%;
+    /* background-color: red; */
+}
+
+#pg2 #pg2l #ch {
+    height: 18vh;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+#pg2 #pg2l #and1 {
+    height: 16vh;
+    position: absolute;
+    top: 43%;
+    left: 32%;
+}
+
+#pg2 #pg2l #and2 {
+    height: 16vh;
+    position: absolute;
+    top: 43%;
+    left: 32%;
+    opacity: 0;
+}
+
+#pg2 #pg2l #and2:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#pg2 #pg2l #download {
+    height: 12vh;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+}
+
+#pg2 #pg2r {
+    position: relative;
+    height: 70vh;
+    width: 25vw;
+    margin-left: 70%;
+    margin-top: -25%;
+    /* background-color: red; */
+}
+
+#pg2 #pg2r>h1 {
+    position: absolute;
+    left: 5%;
+}
+
+#pg2 #pg2r>h5 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-family: gilroy;
+    font-size: 18px;
+    left: 5%;
+    top: 90%;
+    color: rgb(109, 168, 20);
+}
+
+#pg2 #pg2r>h5:hover {
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#pg2 #pg2r #swipe{
+    height: 50vh;
+    width: 20vw;
+    /* background-color: red; */
+    position: relative;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-slide p{
+    width: 14vw;
+    font-size: 15px;
+font-family: gilroy;
+font-weight: 550;
+margin-left: 5%;
+
+  }
+  .swiper-slide h5{
+    opacity: 0.7;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+  }
+#pg3 {
+    height: 150vh;
+    width: 100vw;
+    position: relative;
+    background-color: #a68f58;
+}
+
+#pg3 #mbackground {
+    /* background-color: red; */
+    position: absolute;
+    top: -6%;
+}
+
+#pg3 #mbackground #b1 {
+    width: 50vw;
+}
+
+#pg3 #mbackground #b2 {
+    /* background-color: blue; */
+    position: absolute;
+    width: 50vw;
+}
+
+#pg3 #mbackground #flag {
+    width: 5vw;
+    position: absolute;
+    left: 180%;
+    top: -75%;
+}
+
+#pg3 #montain1 #m11 {
+    height: 14vh;
+    position: absolute;
+    left: 10%;
+}
+
+#pg3 #montain1 #m12 {
+    height: 16vh;
+    position: absolute;
+    left: 35%;
+}
+
+#pg3 #montain1 #m13 {
+    height: 12vh;
+    position: absolute;
+    left: 55%;
+    top: 2%;
+
+}
+
+#pg3 #montain1 #m14 {
+    height: 14vh;
+    position: absolute;
+    left: 80%;
+    top: -1%;
+}
+
+#pg3 #montain2 #m21 {
+    height: 24vh;
+    position: absolute;
+    left: -2%;
+    top: 10%;
+}
+
+#pg3 #montain2 #m22 {
+    height: 24vh;
+    position: absolute;
+    left: 20%;
+    top: 5%;
+}
+
+#pg3 #montain2 #m23 {
+    height: 30vh;
+    position: absolute;
+    left: 40%;
+    top: 6%;
+}
+
+#pg3 #montain2 #m24 {
+    height: 35vh;
+    position: absolute;
+    left: 55%;
+    top: 1%;
+}
+
+#pg3 #montain2 #m25 {
+    height: 26vh;
+    position: absolute;
+    left: 80%;
+    top: 8%;
+}
+
+#pg3 #ln img {
+    position: absolute;
+    top: 150%;
+    height: 8vh;
+}
+
+#pg3 #nav #ln #pg2boy {
+    position: absolute;
+    top: 150%;
+    height: 8vh;
+    opacity: 0;
+}
+
+#pg3 #nav #ln #pg2boy:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#pg3 #nav #line1 {
+    height: 1px;
+    background-color: black;
+    width: 35vw;
+    position: absolute;
+    top: 188%;
+    left: 5%;
+}
+
+#pg3 #nav #line2 {
+    height: 1px;
+    background-color: black;
+    width: 38vw;
+    position: absolute;
+    top: 188%;
+    left: 50%;
+}
+
+#pg3 #nav #rn i {
+    font-size: 35px;
+    position: absolute;
+    top: 290%;
+    left: 10%;
+}
+
+#pg3 #nav #rn #a {
+    display: flex;
+    gap: 30px;
+    width: 30vw;
+    margin-top: 70%;
+    margin-left: 18%;
+}
+
+#pg3 #nav #rn a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+#pg3center #l {
+    height: 15vh;
+    position: absolute;
+    top: 190%;
+    left: 41.5%;
+    z-index: 99;
+}
+#pg3center #l:hover{
+    transform: rotate(10deg);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+    
+
+#pg3center #r {
+    height: 12vh;
+    position: absolute;
+    top: 200%;
+    left: 45%;
+    z-index: 9;
+    animation-name: left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+#pg3center #r:hover{
+    transform: rotate(-10deg);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@keyframes left {
+
+ 
+    
+}
+
+
+    
+
+#pg3center #b {
+    height: 72vh;
+    position: absolute;
+    top: 210%;
+    left: 32%;
+}
+
+#pg3 #pg3l #pg3ltext {
+    height: 30vh;
+    width: 18vw;
+    /* background-color: red; */
+    position: absolute;
+    top: 230%;
+    left: 9%;
+}
+
+#pg3 #pg3l #pg3ltext h1 {
+    font-size: 5vh;
+    transform: rotate(-5deg);
+}
+
+#pg3 #pg3l #pg3ltext p {
+    font-size: 1.8vh;
+    width: 15vw;
+    position: absolute;
+    top: 45%;
+    font-family: gilroy;
+    font-weight: 200;
+    transform: rotate(-5deg);
+
+}
+
+#pg3 #pg3l #lig1 {
+    height: 43vh;
+    position: absolute;
+    left: 8%;
+    top: 210%;
+    transform: rotate(-5deg);
+}
+
+#pg3 #pg3l #link1 {
+    height: 4vh;
+    position: absolute;
+    left: 19%;
+    top: 400%;
+    z-index: 999;
+}
+
+#pg3 #pg3l #link2 {
+    height: 4vh;
+    position: absolute;
+    left: 10%;
+    top: 440%;
+    z-index: 999;
+}
+
+#pg3 #pg3l #link3 {
+    height: 4vh;
+    position: absolute;
+    left: 10%;
+    top: 440%;
+    opacity: 0;
+    z-index: 999;
+}
+
+#pg3 #pg3l #link3:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#pg3 #pg3l #link4 {
+    height: 4vh;
+    position: absolute;
+    left: 19%;
+    top: 400%;
+    z-index: 999;
+    opacity: 0;
+}
+
+#pg3 #pg3l #link4:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#pg3 #pg3ldtext{
+    height: 32vh;
+    width: 18vw;
+    position: relative;
+    /* background-color: red; */
+    left: -180%;
+    top: 350%;
+}
+#pg3 #pg3ldtext h1 {
+    font-size: 3.5vh;
+    position: relative;
+    /* background-color: red; */
+    left: 13%;
+    top: 40%;
+}
+
+#pg3 #pg3ldtext h2 {
+    font-size: 3.2vh;
+    position: absolute;
+    left: 25%;
+    top: 70%;
+}
+
+#pg3 #pg3l #lig2 {
+    height: 35vh;
+    position: absolute;
+    left: 8%;
+    top: 350%;
+}
+
+#pg3 #pg3r {
+    height: 30vh;
+    width: 25vw;
+    /* background-color: red; */
+    position: relative;
+    left: 65%;
+    top: 25%;
+}
+
+#pg3 #pg3r h1 {
+    position: absolute;
+    left: 10%;
+    font-size: 6vh;
+    letter-spacing: -1px;
+}
+
+#pg3 #pg3r p {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+
+#pg3 #pg3r #down {
+    position: absolute;
+    top: 80%;
+    left: 21%;
+}
+
+#pg3 #pg3r #down img {
+    height: 40vh;
+}
+
+#pg3 #pg3r #down h1 {
+    font-size: 3vh;
+    position: absolute;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    color: greenyellow;
+}
+
+#pg3 #pg3r #down h1:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#pg3 #pg3b {
+    position: absolute;
+    top: 42%;
+    left: 22%;
+    height: 45vh;
+}
+
+#pg4 {
+    height: 135vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.769);
+}
+
+#pg4 #upimg  {
+    height: 30vh;
+    width: 200vw;
+    display: flex;
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+    position: absolute;
+    top: -11%;
+    background-repeat: repeat-x;
+    background-image: url(https://boy-coy.com/images/page4/wave_dark.png);
+    
+}
+#pg4 #upimg #upimg2 {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(46, 44, 44);
+    position: absolute;
+    top: 17%;
+    left: -10%;
+}
+
+#pg4 #ccimg {
+    height: 12vh;
+    width: 200vw;
+    position: absolute;
+    top: -6%;
+    display: flex;
+    /* background-color: red; */
+    background-repeat: repeat-x;
+    background-image: url(https://boy-coy.com/images/page4/wave_medium.png);
+}
+#pg4 #ccimg #ccimg2{
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(55, 53, 53);
+    position: absolute;
+    top: 70%;
+}
+#pg4 #lastimg1{
+    height: 20vh;
+    width: 200vw;
+    position: absolute;
+    top: -3%;
+    /* background-color: red; */
+    background-repeat: repeat-x;
+    background-image: url(https://boy-coy.com/images/page4/wave_light.png);
+}
+
+#pg4 #lastcolor {
+    height: 115vh;
+    width: 100vw;
+    background-color: #414042;
+    position: absolute;
+    top: 5%;
+    /* z-index: -1; */
+}
+
+#pg4 #arrow {
+    height: 82vh;
+    width: 22vw;
+    position: absolute;
+    top: 118%;
+    left: 12%;
+    z-index: 8;
+    background-image: url(https://boy-coy.com/images/page4/anchor.png);
+
+}
+
+#pg4 #nav #ln #pg2boy {
+    position: absolute;
+
+}
+
+#pg4 #nav #ln {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+
+#pg4 #nav #line1 {
+    background-color: #2b2b2b;
+    position: absolute;
+    top: 110%;
+}
+
+#pg4 #nav #line2 {
+    background-color: #2b2b2bb3;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    width: 42vw;
+}
+
+#pg4 #nav i {
+    position: absolute;
+    left: -5%;
+    top: 140%;
+}
+
+#pg4 #nav #a {
+    position: absolute;
+    top: 60%;
+}
+
+#pg4 #endimg {
+    position: relative;
+    height: 70vh;
+    width: 35vw;
+    /* background-color: rebeccapurple; */
+    margin-top: 12%;
+    margin-left: -10%;
+}
+
+#pg4 #endimg #e1 {
+    height: 28vh;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+}
+
+#pg4 #endimg #e2 {
+    height: 16vh;
+    position: absolute;
+    top: 40%;
+    left: 11%;
+}
+
+#pg4 #endimg #e3 {
+    height: 43vh;
+    width: 25vw;
+    position: absolute;
+    top: 5%;
+    left: 14%;
+    z-index: 9;
+}
+
+
+#pg4 #endimg #e4 {
+    height: 2vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+}
+
+#pg4 #endimg #e5 {
+    height: 1vh;
+}
+
+#pg4 #endimg #e6 {
+    height: 1vh;
+}
+
+#pg4 #endimg #e7 {
+    height: 17vh;
+    position: absolute;
+    top: 39%;
+    width: 31vw;
+    left: 5.5%;
+    z-index: 99;
+}
+
+#pg4 #endimg #e8 {
+    height: 25vh;
+    width: 30.9vw;
+    position: absolute;
+    top: 63%;
+    left: 5.6%;
+    z-index: 99;
+}
+
+#pg4 #endimg #e9 {
+    height: 10vh;
+    position: absolute;
+    left: -20%;
+    top: 18%;
+}
+
+#pg4 #endimg #details {
+    height: 20vh;
+    width: 22vw;
+    /* background-color: red; */
+    position: relative;
+    top: 18%;
+    left: 18%;
+    z-index: 9999;
+    font-family: yank;
+}
+#pg4 #endimg #details:hover{
+    margin-top: -3%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#pg4 #endimg #details h1 {
+    font-size: 15px;
+}
+
+#pg4 #endimg #details h2 {
+    font-size: 13px;
+    position: absolute;
+    top: 20%;
+}
+
+#pg4 #endimg #details h3 {
+    font-size: 14px;
+    position: absolute;
+    top: 20%;
+    left: 75%;
+}
+
+#pg4 #endimg #details h4 {
+    font-size: 14px;
+    position: absolute;
+    top: 40%;
+    left: 1%;
+}
+
+#pg4 #endimg #details h5 {
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+
+#pg4 #endimg #details #detailsline1 {
+    height: 1px;
+    width: 11vw;
+    background-color: orange;
+    position: absolute;
+    top: 28%;
+    left: 25%;
+}
+
+#pg4 #endimg #details #detailsline2 {
+    height: 1px;
+    width: 9vw;
+    background-color: orange;
+    position: absolute;
+    top: 48%;
+    left: 25%;
+}
+
+#pg4 #endimg #details #detailsline3 {
+    height: 1px;
+    width: 20vw;
+    background-color: rgb(255, 166, 0);
+    position: absolute;
+    top: 70%;
+    left: 3%;
+}
+
+#pg4 #endimg #details h6 {
+    color: white;
+    font-family: gilroy;
+    background-color: rgb(100, 161, 8);
+    width: 6vw;
+    height: 5vh;
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    padding: 5px 15px;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#pg4 #endimg #details h6 i {
+    position: absolute;
+    top: 20%;
+    left: 75%;
+}
+
+#pg4 #endimg #details #detailsline4 {
+    height: 1px;
+    width: 23vw;
+    background-color: rgba(255, 166, 0, 0.354);
+    position: absolute;
+    top: 88%;
+    left: -3%;
+}
+
+#pg4 #pgere {
+    height: 70vh;
+    width: 20vw;
+    /* background-color: red; */
+    color: grey;
+    position: relative;
+    /* position: absolute; */
+    top: 150%;
+    left: 5%;
+    font-family: gilroy;
+}
+
+#pg4 #pgere #icon {
+    background-image: url(https://boy-coy.com/images/page4/social_icons.png);
+    height: 14vh;
+    width: 2.1vw;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+#pg4 #pgere #icon #icondets {
+    /* background-color: red; */
+    width: 20vw;
+    position: absolute;
+    left: 180%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pg4 #pgere #icon #icondets a {
+    color: white;
+    width: 15vw;
+    text-decoration: underline 1px;
+}
+
+#pg4 #pgere #icon #icondets a:hover {
+    text-decoration: underline 2px rgba(128, 0, 128, 0.358);
+
+}
+
+#pg4 #pgere2 {
+    height: 50vh;
+    width: 20vw;
+    color: grey;
+    position: relative;
+    top: 300%;
+    left: -15%;
+    font-family: gilroy;
+}
+
+#pg4 #pgere2>h1 {
+    font-size: 22px;
+}
+
+#pg4 #pgere2>p {
+    font-size: 15px;
+}
+
+#pg4 #pgere2 #icon #icondets {
+    background-color: red;
+}
+
+#pg4 #pgere2 #icon2 #icondets {
+    /* background-color: red; */
+    width: 10vw;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pg4 #pgere2 #icon2 #icondets2 {
+    /* background-color: red; */
+    width: 10vw;
+    position: absolute;
+    left: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pg4 #pgere2 #icon2 #icondets a {
+    color: white;
+    width: 15vw;
+    text-decoration: underline 1px;
+    margin-top: 10%;
+}
+
+#pg4 #endflower {
+    height: 22vh;
+    width: 35vw;
+    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    top: 53%;
+    left: -16%;
+    background-image: url(https://boy-coy.com/images/page4/octopus.png);
+}
+
+#pg4 #atlast2 {
+    /* color: white; */
+    position: relative;
+    width: 50vw;
+    /* background-color: red; */
+    top: 85%;
+    left: -310%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: gilroy;
+}
+
+#pg4 #atlast2 a {
+    text-decoration: underline;
+    color: white;
+}
+
+#pg4 #atlast3 {
+    position: relative;
+    width: 20vw;
+    top: 80%;
+    left: 40%;
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: gilroy;
+}
+
+#pg4 #atlast3>h1 {
+    background-color: rgb(15, 133, 173);
+    position: relative;
+    color: white;
+    width: 8vw;
+    height: 4vh;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pg4 #atlast3 i {
+    position: absolute;
+    top: 25%;
+    left: 7%;
+}
+
+#pg4 #atlast3>h2 {
+    background-color: rgb(6, 71, 145);
+    position: relative;
+    left: 0%;
+    color: white;
+    width: 8vw;
+    height: 4vh;
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
